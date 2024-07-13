@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozetka Header</title>
+    <style>
+
+        .header {
+            background-color: #221f1f;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00a046;
+        }
+        .menu-icon, .user-icon, .cart-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #00a046;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .language-switch {
+            margin-right: 20px;
+        }
+        .language-switch a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-icon">☰</div>
+        <div class="logo">ROZETKA</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Я шукаю...">
+            <button>Знайти</button>
+        </div>
+        <div class="language-switch">
+            <a href="#">UA</a> | <a href="#">RU</a>
+        </div>
+        <div class="user-icon">👤</div>
+        <div class="cart-icon">🛒</div>
+    </header>
+</body>
+</html>
